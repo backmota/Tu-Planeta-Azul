@@ -16,27 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    
+    /*
     dataArray=[[NSArray alloc]initWithObjects:@"Vendedor",@"Comprador", nil];
     UIPickerView *picker=[[UIPickerView alloc]init];
     picker.dataSource=self;
     picker.delegate=self;
     [picker setShowsSelectionIndicator:YES];
     [self.pickerTextField setInputView:picker];
+     */
 
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
 //UIPickerView
-
+/*
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
@@ -57,7 +56,7 @@
 {
     self.pickerTextField.text=[dataArray objectAtIndex:row];
 }
-
+*/
 
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1364E1CB1B8EC8CF00391915 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1364E1CA1B8EC8CF00391915 /* CoreData.framework */; };
 		14302F811B8E8A9C00798E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F801B8E8A9C00798E50 /* main.m */; };
 		14302F841B8E8A9C00798E50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F831B8E8A9C00798E50 /* AppDelegate.m */; };
 		14302F871B8E8A9C00798E50 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F861B8E8A9C00798E50 /* FirstViewController.m */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1364E1CA1B8EC8CF00391915 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		14302F7B1B8E8A9C00798E50 /* Tu Planeta Azul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tu Planeta Azul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14302F7F1B8E8A9C00798E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14302F801B8E8A9C00798E50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1364E1CB1B8EC8CF00391915 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		14302F721B8E8A9B00798E50 = {
 			isa = PBXGroup;
 			children = (
+				1364E1CA1B8EC8CF00391915 /* CoreData.framework */,
 				14302F7D1B8E8A9C00798E50 /* Tu Planeta Azul */,
 				14302F9A1B8E8A9C00798E50 /* Tu Planeta AzulTests */,
 				14302F7C1B8E8A9C00798E50 /* Products */,
@@ -98,9 +102,9 @@
 				14302F851B8E8A9C00798E50 /* FirstViewController.h */,
 				14302F861B8E8A9C00798E50 /* FirstViewController.m */,
 				14302F881B8E8A9C00798E50 /* SecondViewController.h */,
+				14302F891B8E8A9C00798E50 /* SecondViewController.m */,
 				14E693341B8EC5AF000F4A32 /* ThirdViewController.h */,
 				14E693351B8EC5AF000F4A32 /* ThirdViewController.m */,
-				14302F891B8E8A9C00798E50 /* SecondViewController.m */,
 				14302F8B1B8E8A9C00798E50 /* Main.storyboard */,
 				14302FA71B8E8B5B00798E50 /* block.png */,
 				14302FA81B8E8B5B00798E50 /* logoplaneta.png */,
