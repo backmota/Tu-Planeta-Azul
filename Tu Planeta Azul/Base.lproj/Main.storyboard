@@ -37,7 +37,7 @@ Ven y diseñemos juntos®.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="-491"/>
+            <point key="canvasLocation" x="878" y="-493"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -140,7 +140,7 @@ Ven y diseñemos juntos®.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="614"/>
+            <point key="canvasLocation" x="884" y="614"/>
         </scene>
         <!--Item-->
         <scene sceneID="uE3-NM-hda">
