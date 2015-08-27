@@ -37,7 +37,7 @@ Ven y diseñemos juntos®.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="-493"/>
+            <point key="canvasLocation" x="670" y="-1053"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -130,6 +130,13 @@ Ven y diseñemos juntos®.</string>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g5y-gD-ci3">
+                                <rect key="frame" x="694" y="417" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -140,7 +147,7 @@ Ven y diseñemos juntos®.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="614"/>
+            <point key="canvasLocation" x="670" y="134"/>
         </scene>
         <!--Item-->
         <scene sceneID="uE3-NM-hda">
@@ -168,7 +175,7 @@ Ven y diseñemos juntos®.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePB-ou-xuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="1745"/>
+            <point key="canvasLocation" x="680" y="1289"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -188,7 +195,7 @@ Ven y diseñemos juntos®.</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-344" y="276"/>
         </scene>
     </scenes>
     <resources>
