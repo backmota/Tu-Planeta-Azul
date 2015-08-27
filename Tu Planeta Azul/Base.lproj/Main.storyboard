@@ -145,7 +145,7 @@ Ven y diseñemos juntos®.</string>
         <!--Item-->
         <scene sceneID="uE3-NM-hda">
             <objects>
-                <viewController id="fe7-ug-xHj" sceneMemberID="viewController">
+                <viewController id="fe7-ug-xHj" customClass="ThirdViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RNn-kP-bmM">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,15 +160,18 @@ Ven y diseñemos juntos®.</string>
                                 <state key="normal" title="CARGAR DATOS AL SERVIDOR">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cargarDatos:" destination="fe7-ug-xHj" eventType="touchUpInside" id="YKM-OD-sse"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Wny-Ep-1Ie"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="first" id="Wny-Ep-1Ie"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePB-ou-xuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="1289"/>
+            <point key="canvasLocation" x="676" y="1295"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

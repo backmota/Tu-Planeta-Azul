@@ -18,6 +18,7 @@
 		14302FAA1B8E8B5B00798E50 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 14302FA71B8E8B5B00798E50 /* block.png */; };
 		14302FAB1B8E8B5B00798E50 /* logoplaneta.png in Resources */ = {isa = PBXBuildFile; fileRef = 14302FA81B8E8B5B00798E50 /* logoplaneta.png */; };
 		14302FAC1B8E8B5B00798E50 /* tuplanetaazul.png in Resources */ = {isa = PBXBuildFile; fileRef = 14302FA91B8E8B5B00798E50 /* tuplanetaazul.png */; };
+		14E693361B8EC5AF000F4A32 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E693351B8EC5AF000F4A32 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		14302FA71B8E8B5B00798E50 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = SOURCE_ROOT; };
 		14302FA81B8E8B5B00798E50 /* logoplaneta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoplaneta.png; sourceTree = SOURCE_ROOT; };
 		14302FA91B8E8B5B00798E50 /* tuplanetaazul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuplanetaazul.png; sourceTree = SOURCE_ROOT; };
+		14E693341B8EC5AF000F4A32 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		14E693351B8EC5AF000F4A32 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				14302F851B8E8A9C00798E50 /* FirstViewController.h */,
 				14302F861B8E8A9C00798E50 /* FirstViewController.m */,
 				14302F881B8E8A9C00798E50 /* SecondViewController.h */,
+				14E693341B8EC5AF000F4A32 /* ThirdViewController.h */,
+				14E693351B8EC5AF000F4A32 /* ThirdViewController.m */,
 				14302F891B8E8A9C00798E50 /* SecondViewController.m */,
 				14302F8B1B8E8A9C00798E50 /* Main.storyboard */,
 				14302FA71B8E8B5B00798E50 /* block.png */,
@@ -237,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14302F8A1B8E8A9C00798E50 /* SecondViewController.m in Sources */,
+				14E693361B8EC5AF000F4A32 /* ThirdViewController.m in Sources */,
 				14302F841B8E8A9C00798E50 /* AppDelegate.m in Sources */,
 				14302F871B8E8A9C00798E50 /* FirstViewController.m in Sources */,
 				14302F811B8E8A9C00798E50 /* main.m in Sources */,
@@ -436,6 +442,7 @@
 				14302FA31B8E8A9C00798E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14302FA41B8E8A9C00798E50 /* Build configuration list for PBXNativeTarget "Tu Planeta AzulTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				14302FA61B8E8A9C00798E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
