@@ -37,7 +37,7 @@ Ven y diseñemos juntos®.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="-1071"/>
+            <point key="canvasLocation" x="670" y="-1053"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -92,13 +92,13 @@ Ven y diseñemos juntos®.</string>
                                         <rect key="frame" x="316" y="92" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" minimumFontSize="17" id="WHy-bh-tLN">
                                         <rect key="frame" x="25" y="231" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cómo te gustaría participar en nuestra red de diseñadores artesanos?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3vQ-UX-Xjd">
                                         <rect key="frame" x="316" y="138" width="298" height="76"/>
@@ -115,20 +115,18 @@ Ven y diseñemos juntos®.</string>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtv-uD-oKa">
-                                        <rect key="frame" x="25" y="539" width="64" height="30"/>
+                                        <rect key="frame" x="25" y="539" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Guardar">
+                                        <state key="normal" title="Enviar">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="tRj-fF-Js3">
-                                        <rect key="frame" x="316" y="231" width="280" height="29"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="gKe-gd-Qor">
+                                        <rect key="frame" x="316" y="231" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="Vendedor"/>
-                                            <segment title="Comprador"/>
-                                        </segments>
-                                    </segmentedControl>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -136,12 +134,15 @@ Ven y diseñemos juntos®.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="pickerTextField" destination="gKe-gd-Qor" id="nVG-Aa-uys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="670" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="uE3-NM-hda">
             <objects>
                 <viewController id="fe7-ug-xHj" customClass="ThirdViewController" sceneMemberID="viewController">
@@ -166,19 +167,11 @@ Ven y diseñemos juntos®.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-<<<<<<< Updated upstream
                     <tabBarItem key="tabBarItem" title="Item" image="first" id="Wny-Ep-1Ie"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePB-ou-xuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676" y="1295"/>
-=======
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Wny-Ep-1Ie"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ePB-ou-xuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="536" y="1275"/>
->>>>>>> Stashed changes
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
