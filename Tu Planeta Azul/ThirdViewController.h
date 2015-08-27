@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+extern BOOL ok;
 
 @interface ThirdViewController : UIViewController
 
@@ -16,5 +17,6 @@
 
 
 - (IBAction)cargarDatos:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *device;
 
 @end

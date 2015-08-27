@@ -9,10 +9,12 @@
 #import "ThirdViewController.h"
 #import <Foundation/Foundation.h>
 
-
+BOOL ok=false;
+int pos = 0;
 @interface ThirdViewController ()
 
 @end
+
 
 @implementation ThirdViewController
 
@@ -20,6 +22,7 @@
     [super viewDidLoad];
 
 }
+
 
 -(void)viewDidAppear:(BOOL)animated {
     //cargamos datos de la base de datos
@@ -29,22 +32,24 @@
     self.datosguardados = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
     
     
-    for (int pos=0; pos<self.datosguardados.count; pos++) {
+    for (pos=0; pos<self.datosguardados.count; pos++) {
         
         NSManagedObject *datos = [self.datosguardados objectAtIndex:pos];
-        NSString *nombre = [datos valueForKey:@"nombre"];
-        NSString *email = [datos valueForKey:@"email"];
-        NSString *telefono = [datos valueForKey:@"telefono"];
-        NSString *fecha = [datos valueForKey:@"fecha"];
-        NSString *craftsman = [datos valueForKey:@"craftsman"];
-        NSString *mensaje = [datos valueForKey:@"mensaje"];
-        NSString *suid = [datos valueForKey:@"id"];
+        NSString *nombreM = [datos valueForKey:@"nombre"];
+        NSString *emailM = [datos valueForKey:@"email"];
+        NSString *telefonoM = [datos valueForKey:@"telefono"];
+        NSString *fechaM = [datos valueForKey:@"fecha"];
+        NSString *craftsmanM = [datos valueForKey:@"craftsman"];
+        NSString *mensajeM = [datos valueForKey:@"mensaje"];
+        NSString *suidM = [datos valueForKey:@"id"];
         
         
-        NSLog(@"\n\n Nombre: %@  ID: %@ \n email: %@ \n telefono: %@ \n fecha: %@ \n craftsman: %@ \n mensaje:%@ \n\n",nombre,suid,email,telefono,fecha,craftsman,mensaje);
+        NSLog(@"\n\n Nombre: %@  ID: %@ \n email: %@ \n telefono: %@ \n fecha: %@ \n craftsman: %@ \n mensaje:%@ \n\n",nombreM,suidM,emailM,telefonoM,fechaM,craftsmanM,mensajeM);
     }
-
+    pos=pos-1;
+    NSLog(@"Ultimo Valor:%d", pos);
     
+  
 }
 
 
@@ -74,15 +79,32 @@
 */
 
 - (IBAction)cargarDatos:(id)sender {
+    
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Datos"];
+    self.datosguardados = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    
+    
+    for (pos=0; pos<self.datosguardados.count; pos++) {
+        
+        NSManagedObject *datos = [self.datosguardados objectAtIndex:pos];
+        NSString *nombre = [datos valueForKey:@"nombre"];
+        NSString *email = [datos valueForKey:@"email"];
+        NSString *telefono = [datos valueForKey:@"telefono"];
+        NSString *fecha = [datos valueForKey:@"fecha"];
+        NSString *craftsman = [datos valueForKey:@"craftsman"];
+        NSString *mensaje = [datos valueForKey:@"mensaje"];
+        NSString *suid = [datos valueForKey:@"id"];
+
    
     NSDictionary *headers = @{ @"content-type": @"application/json" };
-    NSDictionary *parameters = @{ @"user_id": @1,
-                                  @"surv_name": @"nombre",
-                                  @"surv_email": @"email@email.com",
-                                  @"surv_phone": @"5555555555",
-                                  @"surv_craftsman": @"comprador",
-                                  @"surv_message": @"mebakjsbkas a osdaosd oasd oasd",
-                                  @"surv_date": @"2015-08-22 13:22:33" };
+    NSDictionary *parameters = @{ @"user_id": suid,
+                                  @"surv_name": nombre,
+                                  @"surv_email": email,
+                                  @"surv_phone": telefono,
+                                  @"surv_craftsman": craftsman,
+                                  @"surv_message": mensaje,
+                                  @"surv_date": fecha };
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     
@@ -108,17 +130,54 @@
                                                     
                                                     }else{
                                                         
-                                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-                                                        NSLog(@"%@", httpResponse);
-                                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"CARGA"
-                                                                                                        message:@"Exitosa"
-                                                                                                       delegate:self
-                                                                                              cancelButtonTitle:@"OK"
-                                                                                              otherButtonTitles:nil];
-                                                        [alert show];
+                                            
+                                               
                                                     }
+                                                    
                                                 }];
+        
+        ok=true;
     [dataTask resume];
+    }
+    
+    if (ok==true)
+    {
+        //Eliminación de datos
+        
+         NSManagedObjectContext *context = [self managedObjectContext];
+         
+         NSFetchRequest *allDatos = [[NSFetchRequest alloc] init];
+         [allDatos setEntity:[NSEntityDescription entityForName:@"Datos" inManagedObjectContext:context]];
+         [allDatos setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+         
+         NSError *error = nil;
+         NSArray *Datos = [context executeFetchRequest:allDatos error:&error];
+         
+         //error handling goes here
+         for (NSManagedObject *dato in Datos) {
+         [context deleteObject:dato];
+         }
+         NSError *saveError = nil;
+         [context save:&saveError];
+        
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"CARGA"
+         message:@"Exitosa"
+         delegate:self
+         cancelButtonTitle:@"OK"
+         otherButtonTitles:nil];
+         [alert show];
+        
+ 
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"CARGA"
+                                                        message:@"ERROR"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
     
 }
 @end
