@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14302F811B8E8A9C00798E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F801B8E8A9C00798E50 /* main.m */; };
+		14302F841B8E8A9C00798E50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F831B8E8A9C00798E50 /* AppDelegate.m */; };
+		14302F871B8E8A9C00798E50 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F861B8E8A9C00798E50 /* FirstViewController.m */; };
+		14302F8A1B8E8A9C00798E50 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F891B8E8A9C00798E50 /* SecondViewController.m */; };
+		14302F8D1B8E8A9C00798E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14302F8B1B8E8A9C00798E50 /* Main.storyboard */; };
+		14302F8F1B8E8A9C00798E50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14302F8E1B8E8A9C00798E50 /* Images.xcassets */; };
+		14302F921B8E8A9C00798E50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14302F901B8E8A9C00798E50 /* LaunchScreen.xib */; };
+		14302F9E1B8E8A9C00798E50 /* Tu_Planeta_AzulTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14302F9D1B8E8A9C00798E50 /* Tu_Planeta_AzulTests.m */; };
+		14302FAA1B8E8B5B00798E50 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 14302FA71B8E8B5B00798E50 /* block.png */; };
+		14302FAB1B8E8B5B00798E50 /* logoplaneta.png in Resources */ = {isa = PBXBuildFile; fileRef = 14302FA81B8E8B5B00798E50 /* logoplaneta.png */; };
+		14302FAC1B8E8B5B00798E50 /* tuplanetaazul.png in Resources */ = {isa = PBXBuildFile; fileRef = 14302FA91B8E8B5B00798E50 /* tuplanetaazul.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14302F981B8E8A9C00798E50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14302F731B8E8A9B00798E50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14302F7A1B8E8A9C00798E50;
+			remoteInfo = "Tu Planeta Azul";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14302F7B1B8E8A9C00798E50 /* Tu Planeta Azul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tu Planeta Azul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14302F7F1B8E8A9C00798E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14302F801B8E8A9C00798E50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14302F821B8E8A9C00798E50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14302F831B8E8A9C00798E50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14302F851B8E8A9C00798E50 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		14302F861B8E8A9C00798E50 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		14302F881B8E8A9C00798E50 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		14302F891B8E8A9C00798E50 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		14302F8C1B8E8A9C00798E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14302F8E1B8E8A9C00798E50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14302F911B8E8A9C00798E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		14302F971B8E8A9C00798E50 /* Tu Planeta AzulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tu Planeta AzulTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14302F9C1B8E8A9C00798E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14302F9D1B8E8A9C00798E50 /* Tu_Planeta_AzulTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tu_Planeta_AzulTests.m; sourceTree = "<group>"; };
+		14302FA71B8E8B5B00798E50 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = SOURCE_ROOT; };
+		14302FA81B8E8B5B00798E50 /* logoplaneta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoplaneta.png; sourceTree = SOURCE_ROOT; };
+		14302FA91B8E8B5B00798E50 /* tuplanetaazul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuplanetaazul.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14302F781B8E8A9C00798E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14302F941B8E8A9C00798E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14302F721B8E8A9B00798E50 = {
+			isa = PBXGroup;
+			children = (
+				14302F7D1B8E8A9C00798E50 /* Tu Planeta Azul */,
+				14302F9A1B8E8A9C00798E50 /* Tu Planeta AzulTests */,
+				14302F7C1B8E8A9C00798E50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14302F7C1B8E8A9C00798E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14302F7B1B8E8A9C00798E50 /* Tu Planeta Azul.app */,
+				14302F971B8E8A9C00798E50 /* Tu Planeta AzulTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14302F7D1B8E8A9C00798E50 /* Tu Planeta Azul */ = {
+			isa = PBXGroup;
+			children = (
+				14302F821B8E8A9C00798E50 /* AppDelegate.h */,
+				14302F831B8E8A9C00798E50 /* AppDelegate.m */,
+				14302F851B8E8A9C00798E50 /* FirstViewController.h */,
+				14302F861B8E8A9C00798E50 /* FirstViewController.m */,
+				14302F881B8E8A9C00798E50 /* SecondViewController.h */,
+				14302F891B8E8A9C00798E50 /* SecondViewController.m */,
+				14302F8B1B8E8A9C00798E50 /* Main.storyboard */,
+				14302FA71B8E8B5B00798E50 /* block.png */,
+				14302FA81B8E8B5B00798E50 /* logoplaneta.png */,
+				14302FA91B8E8B5B00798E50 /* tuplanetaazul.png */,
+				14302F8E1B8E8A9C00798E50 /* Images.xcassets */,
+				14302F901B8E8A9C00798E50 /* LaunchScreen.xib */,
+				14302F7E1B8E8A9C00798E50 /* Supporting Files */,
+			);
+			path = "Tu Planeta Azul";
+			sourceTree = "<group>";
+		};
+		14302F7E1B8E8A9C00798E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14302F7F1B8E8A9C00798E50 /* Info.plist */,
+				14302F801B8E8A9C00798E50 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14302F9A1B8E8A9C00798E50 /* Tu Planeta AzulTests */ = {
+			isa = PBXGroup;
+			children = (
+				14302F9D1B8E8A9C00798E50 /* Tu_Planeta_AzulTests.m */,
+				14302F9B1B8E8A9C00798E50 /* Supporting Files */,
+			);
+			path = "Tu Planeta AzulTests";
+			sourceTree = "<group>";
+		};
+		14302F9B1B8E8A9C00798E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14302F9C1B8E8A9C00798E50 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14302F7A1B8E8A9C00798E50 /* Tu Planeta Azul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14302FA11B8E8A9C00798E50 /* Build configuration list for PBXNativeTarget "Tu Planeta Azul" */;
+			buildPhases = (
+				14302F771B8E8A9C00798E50 /* Sources */,
+				14302F781B8E8A9C00798E50 /* Frameworks */,
+				14302F791B8E8A9C00798E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tu Planeta Azul";
+			productName = "Tu Planeta Azul";
+			productReference = 14302F7B1B8E8A9C00798E50 /* Tu Planeta Azul.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14302F961B8E8A9C00798E50 /* Tu Planeta AzulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14302FA41B8E8A9C00798E50 /* Build configuration list for PBXNativeTarget "Tu Planeta AzulTests" */;
+			buildPhases = (
+				14302F931B8E8A9C00798E50 /* Sources */,
+				14302F941B8E8A9C00798E50 /* Frameworks */,
+				14302F951B8E8A9C00798E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14302F991B8E8A9C00798E50 /* PBXTargetDependency */,
+			);
+			name = "Tu Planeta AzulTests";
+			productName = "Tu Planeta AzulTests";
+			productReference = 14302F971B8E8A9C00798E50 /* Tu Planeta AzulTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14302F731B8E8A9B00798E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "José Juan Mota Torres";
+				TargetAttributes = {
+					14302F7A1B8E8A9C00798E50 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					14302F961B8E8A9C00798E50 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 14302F7A1B8E8A9C00798E50;
+					};
+				};
+			};
+			buildConfigurationList = 14302F761B8E8A9B00798E50 /* Build configuration list for PBXProject "Tu Planeta Azul" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14302F721B8E8A9B00798E50;
+			productRefGroup = 14302F7C1B8E8A9C00798E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14302F7A1B8E8A9C00798E50 /* Tu Planeta Azul */,
+				14302F961B8E8A9C00798E50 /* Tu Planeta AzulTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14302F791B8E8A9C00798E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14302F8D1B8E8A9C00798E50 /* Main.storyboard in Resources */,
+				14302F921B8E8A9C00798E50 /* LaunchScreen.xib in Resources */,
+				14302FAC1B8E8B5B00798E50 /* tuplanetaazul.png in Resources */,
+				14302F8F1B8E8A9C00798E50 /* Images.xcassets in Resources */,
+				14302FAB1B8E8B5B00798E50 /* logoplaneta.png in Resources */,
+				14302FAA1B8E8B5B00798E50 /* block.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14302F951B8E8A9C00798E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14302F771B8E8A9C00798E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14302F8A1B8E8A9C00798E50 /* SecondViewController.m in Sources */,
+				14302F841B8E8A9C00798E50 /* AppDelegate.m in Sources */,
+				14302F871B8E8A9C00798E50 /* FirstViewController.m in Sources */,
+				14302F811B8E8A9C00798E50 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14302F931B8E8A9C00798E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14302F9E1B8E8A9C00798E50 /* Tu_Planeta_AzulTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14302F991B8E8A9C00798E50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14302F7A1B8E8A9C00798E50 /* Tu Planeta Azul */;
+			targetProxy = 14302F981B8E8A9C00798E50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14302F8B1B8E8A9C00798E50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14302F8C1B8E8A9C00798E50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14302F901B8E8A9C00798E50 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14302F911B8E8A9C00798E50 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14302F9F1B8E8A9C00798E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		14302FA01B8E8A9C00798E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14302FA21B8E8A9C00798E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tu Planeta Azul/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14302FA31B8E8A9C00798E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tu Planeta Azul/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14302FA51B8E8A9C00798E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tu Planeta AzulTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tu Planeta Azul.app/Tu Planeta Azul";
+			};
+			name = Debug;
+		};
+		14302FA61B8E8A9C00798E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tu Planeta AzulTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tu Planeta Azul.app/Tu Planeta Azul";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14302F761B8E8A9B00798E50 /* Build configuration list for PBXProject "Tu Planeta Azul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14302F9F1B8E8A9C00798E50 /* Debug */,
+				14302FA01B8E8A9C00798E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14302FA11B8E8A9C00798E50 /* Build configuration list for PBXNativeTarget "Tu Planeta Azul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14302FA21B8E8A9C00798E50 /* Debug */,
+				14302FA31B8E8A9C00798E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14302FA41B8E8A9C00798E50 /* Build configuration list for PBXNativeTarget "Tu Planeta AzulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14302FA51B8E8A9C00798E50 /* Debug */,
+				14302FA61B8E8A9C00798E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14302F731B8E8A9B00798E50 /* Project object */;
+}
