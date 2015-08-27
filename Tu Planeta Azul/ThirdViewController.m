@@ -18,7 +18,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    //cargamos datos de la base de datos
+    
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Datos"];
+    self.datosguardados = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    
+    
+    for (int pos=0; pos<self.datosguardados.count; pos++) {
+        
+        NSManagedObject *datos = [self.datosguardados objectAtIndex:pos];
+        NSString *nombre = [datos valueForKey:@"nombre"];
+        NSString *email = [datos valueForKey:@"email"];
+        NSString *telefono = [datos valueForKey:@"telefono"];
+        NSString *fecha = [datos valueForKey:@"fecha"];
+        NSString *craftsman = [datos valueForKey:@"craftsman"];
+        NSString *mensaje = [datos valueForKey:@"mensaje"];
+        NSString *suid = [datos valueForKey:@"id"];
+        
+        
+        NSLog(@"\n\n Nombre: %@  ID: %@ \n email: %@ \n telefono: %@ \n fecha: %@ \n craftsman: %@ \n mensaje:%@ \n\n",nombre,suid,email,telefono,fecha,craftsman,mensaje);
+    }
+
+    
+}
+
+
+
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,8 +105,10 @@
                                                                                               cancelButtonTitle:@"OK"
                                                                                               otherButtonTitles:nil];
                                                         [alert show];
-                                                    } else {
-                                                          NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                                                    
+                                                    }else{
+                                                        
+                                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
                                                         NSLog(@"%@", httpResponse);
                                                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"CARGA"
                                                                                                         message:@"Exitosa"

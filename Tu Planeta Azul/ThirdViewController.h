@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @interface ThirdViewController : UIViewController
+
+@property (strong) NSMutableArray *datosguardados;
+
+
 - (IBAction)cargarDatos:(id)sender;
 
 @end

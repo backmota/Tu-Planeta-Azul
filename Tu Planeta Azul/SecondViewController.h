@@ -7,15 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface SecondViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
+@interface SecondViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate>
 
 {
     NSArray *dataArray;
 }
 
 
-@property (weak, nonatomic) IBOutlet UITextField *pickerTextField;
+@property (weak, nonatomic) IBOutlet UITextField *pickerTextField; */
 
+//Elementos interfaz
+@property (weak, nonatomic) IBOutlet UISegmentedControl *opcionesSegm;
+@property (weak, nonatomic) IBOutlet UITextField *nombre;
+@property (weak, nonatomic) IBOutlet UITextField *email;
+@property (weak, nonatomic) IBOutlet UITextField *telefono;
+@property (weak, nonatomic) IBOutlet UITextField *mensaje;
+
+//Base Datos
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
+- (IBAction)Guardar:(id)sender;
 @end
-

@@ -114,19 +114,24 @@ Ven y diseñemos juntos®.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtv-uD-oKa">
-                                        <rect key="frame" x="25" y="539" width="46" height="30"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="unS-Of-HhP">
+                                        <rect key="frame" x="316" y="231" width="280" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Enviar">
+                                        <segments>
+                                            <segment title="Vendedor"/>
+                                            <segment title="Comprador"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kDc-X4-pME">
+                                        <rect key="frame" x="25" y="533" width="80" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Guardar">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Guardar:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ute-X4-Vgk"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="gKe-gd-Qor">
-                                        <rect key="frame" x="316" y="231" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -135,7 +140,11 @@ Ven y diseñemos juntos®.</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="pickerTextField" destination="gKe-gd-Qor" id="nVG-Aa-uys"/>
+                        <outlet property="email" destination="KCl-IN-wJJ" id="gRb-CP-q7e"/>
+                        <outlet property="mensaje" destination="6Af-8S-14e" id="b5P-aa-J8r"/>
+                        <outlet property="nombre" destination="u5H-Ha-90j" id="ah8-HJ-6HE"/>
+                        <outlet property="opcionesSegm" destination="unS-Of-HhP" id="HmG-mg-m4l"/>
+                        <outlet property="telefono" destination="WHy-bh-tLN" id="fUT-aA-tY8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
