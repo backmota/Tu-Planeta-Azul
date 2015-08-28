@@ -24,7 +24,12 @@
     [super viewDidLoad];
     
     //------- codigo para cargar el JSON
-    
+    mensaje.scrollEnabled = YES;
+    mensaje.text = @"Mensaje";
+    mensaje.textColor = [UIColor lightGrayColor];
+    mensaje.delegate = self;
+    mensaje.layer.borderWidth = 1.0f;
+    mensaje.layer.borderColor = [[UIColor grayColor] CGColor];
     /*
     NSDictionary *headers = @{ @"content-type": @"application/json" };
     
@@ -79,8 +84,25 @@
     
 }
 
+- (BOOL) textViewShouldBeginEditing:(UITextView *)textView {
+    mensaje.text = @"";
+    mensaje.textColor = [UIColor blackColor];
+    return YES;
+}
+
+-(void) textViewDidChange:(UITextView *)textView{
+    
+    if(mensaje.text.length == 0){
+        mensaje.textColor = [UIColor lightGrayColor];
+        mensaje.text = @"Mensaje";
+        [mensaje resignFirstResponder];
+    }
+}
+
 -(void)viewDidAppear:(BOOL)animated{
-    [self limpiar];
+    self.nombre.text = @"";
+    self.email.text = @"";
+    self.telefono.text = @"";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface SecondViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate>
+@interface SecondViewController : UIViewController <UITextViewDelegate> /*<UIPickerViewDataSource,UIPickerViewDelegate>
 
 {
     NSArray *dataArray;
@@ -23,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nombre;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UITextField *telefono;
-@property (weak, nonatomic) IBOutlet UITextField *mensaje;
+@property (weak, nonatomic) IBOutlet UITextView *mensaje;
 
 //Base Datos
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;

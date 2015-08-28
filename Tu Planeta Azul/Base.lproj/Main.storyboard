@@ -72,7 +72,7 @@ Ven y diseñemos juntos®.</string>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="8cE-Mg-JJg">
-                                <rect key="frame" x="82" y="220" width="604" height="584"/>
+                                <rect key="frame" x="82" y="220" width="614" height="584"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nos gustaría saber tu opinión, envíanos un mensaje con tus ideas." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vel-VJ-MAS">
@@ -107,13 +107,6 @@ Ven y diseñemos juntos®.</string>
                                         <color key="textColor" red="0.42078993059999997" green="0.42078993059999997" blue="0.42078993059999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Mensaje" minimumFontSize="17" id="6Af-8S-14e">
-                                        <rect key="frame" x="25" y="295" width="571" height="215"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.77373342803030298" green="0.77373342803030298" blue="0.77373342803030298" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="unS-Of-HhP">
                                         <rect key="frame" x="316" y="231" width="280" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -132,6 +125,13 @@ Ven y diseñemos juntos®.</string>
                                             <action selector="Guardar:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ute-X4-Vgk"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="oxF-IP-tqy">
+                                        <rect key="frame" x="25" y="277" width="571" height="248"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -141,7 +141,7 @@ Ven y diseñemos juntos®.</string>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="email" destination="KCl-IN-wJJ" id="gRb-CP-q7e"/>
-                        <outlet property="mensaje" destination="6Af-8S-14e" id="b5P-aa-J8r"/>
+                        <outlet property="mensaje" destination="oxF-IP-tqy" id="eyS-Nk-UA1"/>
                         <outlet property="nombre" destination="u5H-Ha-90j" id="ah8-HJ-6HE"/>
                         <outlet property="opcionesSegm" destination="unS-Of-HhP" id="HmG-mg-m4l"/>
                         <outlet property="telefono" destination="WHy-bh-tLN" id="fUT-aA-tY8"/>
