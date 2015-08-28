@@ -79,6 +79,10 @@
     
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [self limpiar];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -130,12 +134,14 @@
         [nuevoDato setValue:@"6" forKey:@"id"];
     
         NSError *error = nil;
+       
         //guardar el objeto
         if (![context save:&error]) {
             NSLog(@"No se pudo guardar! %@ %@", error, [error localizedDescription]);
         }
     
         [self dismissViewControllerAnimated:YES completion:nil];
+        [self limpiar];
     }else{
         [self alerta];
     }
@@ -159,6 +165,13 @@
                                           cancelButtonTitle:@"Corregir"
                                           otherButtonTitles:nil];
     [alert show];
+}
+
+-(void)limpiar{
+    self.nombre.text = @"";
+    self.email.text = @"";
+    self.telefono.text = @"";
+    self.mensaje.text = @"";
 }
 
 //UIPickerView
